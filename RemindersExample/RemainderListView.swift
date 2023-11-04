@@ -15,7 +15,10 @@ struct RemainderListView: View {
     var body: some View {
         HStack {
             VStack {
+                Spacer()
                 CircleView()
+                Spacer()
+                Spacer()
                 Spacer()
             }
             VStack {
@@ -32,6 +35,7 @@ struct RemainderListView: View {
                     Spacer()
                 }
             }
+            .fontWeight(.regular)
         }
     }
 }

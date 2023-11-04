@@ -46,29 +46,48 @@ struct ContentView: View {
                             remainderDate: "Tomorrow, 12:00 PM"
                         )
                     }
-                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                    .listRowInsets(EdgeInsets(top: 3, leading: 0, bottom: 3, trailing: 0))
                 }
                 .listStyle(.plain)
-                .padding()
-                HStack {
-                    ZStack {
-                        Circle()
-                            .frame(width: 25)
-                        Image(systemName: "plus")
-                            .fontWeight(.heavy)
-                            .foregroundColor(.white)
-                    }
-                    .padding(.leading)
-                    Text("New Reminder")
-                        .fontWeight(.bold)
-                        .font(.body)
-                }
-                .foregroundColor(Color(.blue))
             }
             .padding()
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button(action: {}) {
+                        Image(systemName: "chevron.backward")
+                            .fontWeight(.bold)
+                        Text("Lists")
+                    }
+                    .font(.body)
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(action: {}) {
+                        Image(systemName: "square.and.arrow.up")
+                            .padding(.horizontal)
+                        Image(systemName: "ellipsis.circle")
+                    }
+                }
+                ToolbarItem(placement: .bottomBar) {
+                    Button(action: {}) {
+                        HStack {
+                            ZStack {
+                                Circle()
+                                    .frame(width: 25)
+                                Image(systemName: "plus")
+                                    .foregroundColor(.white)
+                                    .fontWeight(.heavy)
+                                    .font(.system(size: 15))
+                                    .scaledToFit()
+                            }
+                            Text("New Reminder")
+                                .fontWeight(.bold)
+                                .font(.body)
+                        }
+                    }
+                }
+            }
+            .tint(.blue)
             .navigationTitle("To do")
-                .fontWeight(.bold)
-                .foregroundColor(Color(.blue))
         }
     }
 }
