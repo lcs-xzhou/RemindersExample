@@ -11,6 +11,8 @@
 		2D95886F2AF55023000C51C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95886E2AF55023000C51C9 /* ContentView.swift */; };
 		2D9588712AF55025000C51C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D9588702AF55025000C51C9 /* Assets.xcassets */; };
 		2D9588742AF55025000C51C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D9588732AF55025000C51C9 /* Preview Assets.xcassets */; };
+		2D95887B2AF551FC000C51C9 /* RemainderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95887A2AF551FC000C51C9 /* RemainderListView.swift */; };
+		2D95887D2AF57D25000C51C9 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95887C2AF57D25000C51C9 /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		2D95886E2AF55023000C51C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2D9588702AF55025000C51C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D9588732AF55025000C51C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2D95887A2AF551FC000C51C9 /* RemainderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainderListView.swift; sourceTree = "<group>"; };
+		2D95887C2AF57D25000C51C9 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +57,10 @@
 			children = (
 				2D95886C2AF55023000C51C9 /* RemindersExampleApp.swift */,
 				2D95886E2AF55023000C51C9 /* ContentView.swift */,
+				2D95887A2AF551FC000C51C9 /* RemainderListView.swift */,
 				2D9588702AF55025000C51C9 /* Assets.xcassets */,
 				2D9588722AF55025000C51C9 /* Preview Content */,
+				2D95887C2AF57D25000C51C9 /* CircleView.swift */,
 			);
 			path = RemindersExample;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D95887D2AF57D25000C51C9 /* CircleView.swift in Sources */,
+				2D95887B2AF551FC000C51C9 /* RemainderListView.swift in Sources */,
 				2D95886F2AF55023000C51C9 /* ContentView.swift in Sources */,
 				2D95886D2AF55023000C51C9 /* RemindersExampleApp.swift in Sources */,
 			);

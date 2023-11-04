@@ -8,11 +8,37 @@
 import SwiftUI
 
 struct RemainderListView: View {
+    
+    let remainderText: String
+    let remainderDate: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            VStack {
+                CircleView()
+                Spacer()
+            }
+            VStack {
+                HStack {
+                    Text(remainderText)
+                        .font(.body)
+                        .foregroundColor(.black)
+                    Spacer()
+                }
+                HStack {
+                    Text(remainderDate)
+                        .font(.footnote)
+                        .foregroundColor(Color("Dark Gray"))
+                    Spacer()
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    RemainderListView()
+    RemainderListView(
+        remainderText: "Call auto body shop",
+        remainderDate: "2023-11-16"
+    )
 }

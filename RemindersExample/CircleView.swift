@@ -9,7 +9,14 @@ import SwiftUI
 
 struct CircleView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Circle()
+                .frame(width: 25)
+                .foregroundColor(.gray)
+            Circle()
+                .frame(width: 22)
+                .foregroundColor(.white)
+        }
     }
 }
 
